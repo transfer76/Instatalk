@@ -3,3 +3,10 @@
 <%= link_to "Leave", root_path %>
 
 <p id="notice"><%= notice %></p>
+
+<div class="messages">
+  <div class="message-inner">
+    <%= render @room.messages %>
+  </div>
+</div>
+
