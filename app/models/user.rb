@@ -12,6 +12,9 @@ class User < ApplicationRecord
   end
 
   def as_json
-    { nickname: nickname, online: online }
+    {
+      "nickname" => nickname,
+      "online" => online
+    }
   end
 end

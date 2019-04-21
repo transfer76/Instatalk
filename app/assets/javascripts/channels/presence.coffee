@@ -11,7 +11,7 @@ App.presence = App.cable.subscriptions.create "PresenceChannel",
     # Called when there's incoming data on the websocket for this channel
     console.log('PresenceChannel received')
 
-    App.presence.drawOnlineUsers(data.users)
+    App.presence.drawOnlineUsers(data.users);
 
   drawOnlineUsers: (users) ->
     console.log(users)
