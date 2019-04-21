@@ -1,6 +1,6 @@
 class RoomChannel < ApplicationCable::Channel
   def subscribed
-    logger.infzo "Subscribed to RoomChannel, roomId: #{params[:roomId]}"
+    logger.info "Subscribed to RoomChannel, roomId: #{params[:roomId]}"
 
     @room = Room.find(params[:roomId])
 
