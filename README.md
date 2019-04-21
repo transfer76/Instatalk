@@ -1,24 +1,41 @@
-# README
+## Instatalk
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Description
 
-Things you may want to cover:
+The web application for simple chat talking. You can create chat romms with your friends and made talking in your pleasure.
 
-* Ruby version
+Action Cable and Redis websockets are involved in application.
 
-* System dependencies
+Language:  Ruby  version 2.5.3
 
-* Configuration
+Web-framework:  Ruby on Rails  version 5.2.2
 
-* Database creation
+Database development: Sqlite3
 
-* Database initialization
+Database production: PostgreSQL / Redis
 
-* How to run the test suite
+## To Start App
 
-* Services (job queues, cache servers, search engines, etc.)
+1. Download or clone the "Instatalk" repository
 
-* Deployment instructions
+2. Get your terminal window into "Instatalk" derictory
 
-* ...
+3. Use bundle
+
+``` 
+$ bundle install 
+```
+
+4. Run database migraition
+
+``` 
+$ bundle exec rails db:create 
+
+$ bundle exec rails db:migrate 
+```
+
+5. Start server
+
+```
+$ bundle exec rails s
+```
