@@ -2,7 +2,7 @@
 
 <h1>Rooms</h1>
 
-<div class="js-online-users text-success">Online: <%= render partial: 'users/user', collection: User.online.as_json, as: :user %></div>
+<div class="js-online-users text-success">Online: <%= render partial: 'users/user', collection: User.online, as: :user %></div>
 
 <ul class="mt-4 list-unstyled">
   <%= render @rooms %>

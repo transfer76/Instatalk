@@ -10,6 +10,6 @@ App.presence = App.cable.subscriptions.create "PresenceChannel",
   drawOnlineUsers: (users) ->
     if (users.length > 0)
       text = 'Online: '
-      text += users.map((user) -> user.nickname).join(', ')
+      text += users.map((user) -> user.nickname).join(' ')
 
       $('.js-online-users').text(text)
