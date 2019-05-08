@@ -2,9 +2,9 @@
 
 ### Description
 
-The web application for simple chat talking. You can create chat romms with your friends and made talking in your pleasure.
+The web application for simple chat talking. You can create chat rooms with your friends and made talking in your pleasure.
 
-Action Cable and Redis websockets are involved in application.
+Action Cable and Websockets are involved in application.
 
 Language:  Ruby  version 2.5.3
 
